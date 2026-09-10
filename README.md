@@ -37,12 +37,11 @@ Encargada de la comunicación con el backend y la persistencia de datos. Funcion
 - service: se encarga de comunicarse con la API.
 
 
-
 # Arquitectura y estructura
 
 El proyecto está dividido en tres capas principales:
 
-- Infraestructura: gestiona la comunicación con el backend o las APIs.
+- Infraestructura: gestiona la comunicación con las APIs.
 
 - Vistas (app): administra la interfaz de usuario.
 

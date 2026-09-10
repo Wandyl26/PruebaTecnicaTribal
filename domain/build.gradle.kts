@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.kotlin.ksp)
     alias(libs.plugins.dagger.hilt)
 }
@@ -58,8 +57,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
 
-    testImplementation(libs.truth)
-    testImplementation(libs.turbine)
 
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)

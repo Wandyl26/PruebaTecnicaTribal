@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.kotlin.ksp)
 }
 
@@ -56,17 +55,9 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
 
-    testImplementation(libs.truth)
-    testImplementation(libs.turbine)
     implementation(libs.retrofit2)
-    implementation(libs.retrofit2.kotlinx.serialization.converter)
     implementation(libs.retrofit2.converter.gson)
     implementation(libs.okhttp)
-
-    androidTestImplementation(libs.androidx.room.testing)
-    implementation(libs.androidx.room.runtime)
-    implementation(libs.androidx.room)
-    ksp(libs.androidx.room.compiler)
 
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
@@ -75,8 +66,6 @@ dependencies {
     testImplementation(libs.hilt.android.testing)
     kspTest(libs.hilt.android.compiler)
     implementation(libs.hilt.navigation.compose)
-
-    implementation(libs.kotlinx.serialization.json)
 
     implementation(project(":domain"))
 }

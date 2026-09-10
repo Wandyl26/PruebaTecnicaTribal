@@ -21,9 +21,7 @@ class CategoriesScreenListTest {
     @Before
     fun setUp() {
         hiltRule.inject()
-
     }
-
 
     @Test
     fun testListCategoriesScreen()= runTest {
